@@ -2,14 +2,65 @@ const descriptionYear1 = `Ano pessoal 1 tem muita sorte. Isso porque esse númer
 Durante esse período, é provável que você se sinta bastante independente. O seu espírito de liderança vai estar a mil, o que influencia ainda mais os seus projetos, sejam eles pessoais ou profissionais; tudo isso de forma positiva, é claro.
 Se você vem sendo cauteloso, agora é o momento para deixar a sua ambição correr solta e partir em uma jornada de autoconhecimento. Valorize a sua própria opinião e intuição, pois você está sendo influenciado por energias positivas. Tenha fé em você mesmo, pois tudo conspira a seu favor!
 `;
-const descriptionYear2 = "Ano pessoal 2 pode ser muito devagar... [Texto completo]";
-const descriptionYear3 =
-    "Ano pessoal 3 também influencia bastante a nossa expressão... [Texto completo]";
-const descriptionYear4 = "Aqui vai o texto do ano pessoal 4";
-const descriptionYear5 = "Aqui vai o texto do ano pessoal 5";
-const descriptionYear6 = "Aqui vai o texto do ano pessoal 6";
-const descriptionYear7 = "Aqui vai o texto do ano pessoal 7";
-const descriptionYear8 = "Aqui vai o texto do ano pessoal 8";
+const descriptionYear2 = `Se é o número 2 que está regendo o seu ano, então saiba que você vai ter que exercer a paciência, porque ele representa um período mais lento de nossas vidas, que muitas vezes diz respeito à fermentação daquilo que esperamos que ocorra.
+
+Ou seja, por mais que ele não pareça importante, continua possuindo grande influência na sua trajetória, porque você irá dar passos importantes durante esse ano, mas não verá os seus frutos imediatamente, somente no futuro.
+
+O ano pessoal 2 pode ser muito devagar, ou seja, as coisas podem demorar para acontecer. Isso pode acabar nos deixando impacientes. É importante, então, agir com cautela. Nesse momento, estamos bastante frágeis, por isso o melhor a se fazer é ficar de fora do centro das atenções e esperar a hora certa de brilhar.
+
+A união é uma das palavras-chave para passar por esse ano de maneira mais tranquila e sem muitos problemas. Por isso é interessante, durante esse período, reforçar as amizades e evitar conflitos desnecessários para, assim, não perdê-las e tê-las sempre ao seu lado.
+
+Pode ser que você sinta a necessidade de se isolar, mas evite isso ao máximo e sempre peça apoio; você certamente tem pessoas importantes ao seu redor, então pode se surpreender com o quão acolhedoras elas são.`;
+const descriptionYear3 = ` ano pessoal 3 é, em geral, um ano muito leve e cheio de alegria. As pessoas que são regidas por ele são capazes de aproveitar bem o momento e sempre veem o lado bom de tudo, até porque o otimismo também é a sua marca registrada.
+
+Durante esse período, muitas festas ocorrem. Isso faz com que você se sinta feliz e confiante o suficiente para correr atrás dos seus sonhos e de seus objetivos. Não só isso: esse também é o momento perfeito para iniciar projetos. Pode ser que você se empolgue um pouco demais e acabe não concluindo todos eles, mas o importante é que você deu esse passo quando, em outro momento, não faria nem ao menos isso.
+
+O ano pessoal 3 também influencia bastante a nossa expressão. Quando somos regidos por ele, nos sentimos mais à vontade para conversar sobre os nossos sentimentos, ao mesmo tempo em que expomos nossas ideias e defendemos aquilo em que acreditamos. É por isso que esse ano também é conhecido por ser bastante inspirador: nossa criatividade fica a mil e recorremos com bastante frequência às diversas formas de arte.
+
+Tudo isso faz com que você se abra a novas possibilidades, amizades e relacionamentos. No ano pessoal 3, portanto, conhecemos várias pessoas, e muitas delas se aproximarão bastante de nós!`;
+const descriptionYear4 = `O ano pessoal 4 coloca em seu caminho pode ser um pouco complicado. Isso porque, embora você se esforce bastante em diversas áreas da sua vida, também encontrará inúmeros limites que impossibilitam que você consiga fazer tudo aquilo que você pretendia. A estabilidade é marca registrada desse ano e, embora isso pareça ser algo bom, pode nos deixar com uma sensação muito intensa de monotonia.
+
+Entretanto é importante ter paciência. Aproveite esse tempo para organizar as suas ideias para, assim, ter uma visão bastante clara de quais são os seus objetivos. Dessa forma, você conseguirá lidar com tudo que for colocado em sua trajetória de maneira mais eficiente, pois terá um plano traçado em sua mente.
+
+Durante esse período, o melhor a se fazer é prezar a praticidade e a disciplina. Ao seguir regras e desempenhar o seu papel da melhor forma possível, você evita diferentes tipos de problemas e mostra o seu valor a outras pessoas.
+
+A monotonia e a calma desse ano pode te deixar um pouco impaciente. Nesses momentos, lembre-se de que esse período não irá durar para sempre e, mais rapidamente do que você imagina, estará em ação novamente!
+
+Por fim, o ano pessoal 4 normalmente traz mudanças muito intensas. Esteja preparado para se libertar do passado e traçar novos caminhos que, muitas vezes, são bastante improváveis.`;
+const descriptionYear5 = `Mudanças. Essa é a palavra-chave do ano pessoal 5. Pode parecer assustador no início, mas a verdade é que essas modificações que ocorrerão em sua vida irá lhe libertar de tudo aquilo que lhe faz mal e irá abrir a sua mente e seu coração para novas oportunidades, algo que, no final, será extremamente benéfico.
+
+Durante esse período, é comum olhar para a sua trajetória de maneira crítica. Ou seja, você irá analisar tudo aquilo que você já fez e vem fazendo para entender o que é ou não é bom para você. Dessa forma, será capaz de eliminar atos que acabam sendo negativos. Depois disso, você poderá se esquecer do passado e focar no futuro.
+
+A descontração também faz parte do ano pessoal 5. Por causa de todas as libertações mentais e físicas, você se sentirá mais leve para seguir o fluxo e observar para onde a vida te leva de maneira natural. Entretanto não confunda essa liberdade com inconsequência e fique atento às suas companhias!
+
+Aventuras e novas experiências marcarão esse período, por isso é interessante evitar tomar decisões muito importantes, porque você estará bastante empolgado com tudo, e isso pode levar a decisões que não seriam tomadas em outras circunstâncias.
+
+Toda mudança que ocorre, contudo, não é somente mental. Esse é o momento perfeito para viajar, conhecer novos lugares e, quem sabe, mudar ou aperfeiçoar a sua moradia.`;
+const descriptionYear6 = `Harmonia e estabilidade marcam a vida das pessoas que são regidas pelo ano pessoal 6.
+
+Se anteriormente você sentiu que não pertencia a esse universo e que tudo estava fadado a dar errado, saiba que esse é o ano em que tudo começa a entrar nos eixos. O melhor de tudo é que isso se aplica a todas as áreas de nossas vidas!
+
+Por estar em um bom local nesse momento, muitas vezes será necessário agir como um mediador entre indivíduos que estão passando por algum tipo de dificuldade. Sua paz de espírito tornará esse trabalho muito mais suave, então você conseguirá ajudar diversas pessoas.
+
+É importante, contudo, conhecer os seus limites para não acabar se sobrecarregando com problemas que não são seus. Ajude aqueles que querem ser ajudados, não se intrometa na vida de pessoas que lhe querem fora dela e preze sempre a sua própria família e amigos.
+
+O final de certos ciclos da vida também ocorre durante o ano pessoal 6. Nesse período, você conseguirá finalizar todo e qualquer tipo de assunto inacabado, o que lhe traz grande tranquilidade e serenidade.`;
+const descriptionYear7 = `Todas as pessoas que são regidas pelo número 7 partem em uma jornada de autoconhecimento muito intensa. Isso porque, durante esse período, elas se tornam bastante reflexivas e acabam analisando até mesmo suas próprias ações e pensamentos.
+
+Essa seriedade e reflexão faz com que elas acabem se isolando, pois acreditam que podem acabar sendo influenciadas por outros indivíduos em um momento que é muito importante para ela. Na solidão, portanto, elas encontram um pouco de paz e aproveitam esses momentos para se desenvolver em diversas áreas, principalmente intelectualmente e espiritualmente.
+
+Durante esse período, também pode ser que essas pessoas se reconectem com a natureza de uma maneira bastante natural, porque elas irão abordar certos problemas espirituais para, assim, solucioná-los, e um ambiente natural as ajuda nesse momento tão importante.
+
+Calma e paciência devem sempre acompanhar as pessoas regidas pelo ano pessoal 7, porque é importante lembrar que todas as coisas acontecem no tempo certo, então querer apressar certos processos importantes para o nosso crescimento é algo que, no final das contas, pode acabar nos prejudicando bastante.`;
+const descriptionYear8 = `Todo o seu trabalho duro será finalmente recompensado durante o ano pessoal 8, e você irá colher todos os frutos que são resultados de sua responsabilidade e entusiamo! E não para por aí: diversas novas oportunidades serão colocada sem seu caminho nesse período.
+
+Por esse motivo, é importante ficar com a cabeça sempre relaxada para que você possa ponderar sobre todas as suas opções com calma e clareza. Além disso, novas obrigações cairão sobre sua cabeça, e é necessário pensar de maneira bastante racional antes de tomar qualquer tipo de decisão!
+
+O ano pessoal 8 também torna possível que você retome certos projetos que, por algum motivo, foram deixados de lado no passado. Assim, você tem a oportunidade de trazer suas antigas paixões para o presente, e utilizá-las ao seu favor. O sucesso de todos esses planos, contudo, depende unicamente de você e de seu esforço. Por isso, não hesite em dar o máximo de si.
+
+Tudo isso faz com que você se torne uma pessoa bastante dinâmica durante esse período, e você também será capaz de ajudar outras pessoas em seus projetos. Assim, novas amizades e parcerias profissionais irão surgir no ano pessoal 8!
+
+Por fim, a originalidade será sua marca registrada, mas tudo isso com aquela pitada de realismo que evita falhas e fracassos.`;
 const descriptionYear9 = `Ano pessoal 9 é natural que ele faça referência ao fim de uma era.
 Sendo assim, é comum que as pessoas regidas por esse número se encontrem em várias situações que representam a finalização de um ciclo.Mas calma! Não precisa se desesperar. Isso não quer dizer que tudo de bom ou de ruim simplesmente irá desaparecer de sua vida, mas que esses elementos irão se renovar e se reapresentar de maneira um pouco diferenciada no próximo ciclo que se inicia! Dessa maneira, tudo aquilo que acontece em sua trajetória acaba encontrando um equilíbrio maior.
 Essas transformações podem fazer com que tudo pareça estar um pouco mais agitado. Assim, é comum que o indivíduo regido por esse número se sinta um pouco impaciente e até mesmo angustiado, mas é importante manter a calma e olhar para esse momento com orgulho, afinal de contas é mais uma era com sucesso em sua história!
