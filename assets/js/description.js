@@ -67,3 +67,63 @@ Essas transformações podem fazer com que tudo pareça estar um pouco mais agit
 É interessante também o fato de que é muito comum que as pessoas acabem se livrando de tudo o que é ruim em suas vidas durante esse período. Podemos dizer, então, que elas se preparam para iniciar um novo ciclo de forma mais positiva e mais otimista.
 É necessário, contudo, ficar atento para não acabar se excedendo e entrando em alguma situação que lhe coloque em problemas. Pense com muita seriedade em todas as medidas que você irá tomar e as consequências que elas irão lhe trazer.
 `;
+
+const descriptionLove1 = `Harmonia e estabilidade`;
+const descriptionLove2 = `Harmonia e estabilidade`;
+const descriptionLove3 = `Harmonia e estabilidade`;
+const descriptionLove4 = `Harmonia e estabilidade`;
+const descriptionLove5 = `Muitos acreditam que, por ser um período de mudanças e transformações, o ano pessoal 5 não é favorável para os relacionamentos. Isso, contudo, não é verdade!
+
+Para aqueles que estão comprometidos, o ano pessoal 5 oferecerá muitas aventuras para a sua relação! Viagens espontâneas para fugir da rotina, por exemplo, serão bastante comuns e trarão bastante leveza para a vida do casal.
+
+Além disso, essas loucuras irão afastar o tédio do relacionamento, de maneira a evitar diferentes tipos de problemas. A confiança entre os parceiros irá se fortalecer e se tornará ainda mais íntima, o que é bastante importante para o futuro.
+
+As mudanças também podem dizer respeito ao status do casal. Namorados podem se tornar noivos, noivos podem casar e cônjuges podem adotar um novo membro para a família ou até mesmo mudar de residência.
+
+Os solteiros atrairão muitas pessoas para si. O senso de aventura que vai estar lhes rondando vai fazer com que eles fiquem mais soltos e falantes, o que também intensifica o clima de paquera.
+
+A liberdade, contudo, continua regendo os seus corações. Ou seja, paixões passageiras e avassaladoras podem lhes encontrar mas dificilmente se tornarão fixas. Nesse momento, é importante ficar atento para não ter o seu coração quebrado ou então acabar magoando outras pessoas.`;
+const descriptionLove6 = `Prepare-se para ser inundado pelo amor! O ano pessoal 6 favorece a nossa sociabilidade, por isso nos sentimos muito próximos de todas as pessoas. Dessa maneira, nossos relacionamentos durante esse período se tornam muito intensos, porém de maneira positiva.
+
+Para quem já se encontra em um relacionamento sério e estável, não é preciso se preocupar! As coisas não vão esfriar, muito pelo contrário: elas se tornarão ainda mais românticas e encantadoras. Esse é o momento perfeito para pensar sobre o futuro junto com o seu parceiro e tomar decisões sérias.
+
+Entretanto quem se sente preso em um relacionamento ruim com certeza sentirá uma necessidade muito forte de terminar as coisas. No espírito de finalizar ciclos, existem chances muito altas de que você se separe de seu parceiro.
+
+Os solteiros podem comemorar: durante esse período, o amor está no ar, por isso é bem possível que você encontre a sua cara-metade. O romantismo vai estar ao seu redor, por iso talvez você finalmente viva aquele amor de filme de Hollywood!`;
+const descriptionLove7 = `Harmonia e estabilidade`;
+const descriptionLove8 = `Harmonia e estabilidade`;
+const descriptionLove9 = `Harmonia e estabilidade`;
+
+const descriptionWork1 = `Harmonia e estabilidade`;
+const descriptionWork2 = `Harmonia e estabilidade`;
+const descriptionWork3 = `Harmonia e estabilidade`;
+const descriptionWork4 = `Harmonia e estabilidade`;
+const descriptionWork5 = `As pessoas que estão certas de que estão na área que mais combinam com elas avançarão muito em suas carreiras durante o ano pessoal 5. Seja em um emprego ou em um cargo novo, eles terão a oportunidade de fazer a diferença e se sentirão muito bem com esse fato!
+
+Inclusive, diferentes tipos de ofertas irão chegar ao seu caminho. Entretanto pense com calma sobre elas. Não deixe a impulsividade tomar conta de você. Dessa forma, você evita decisões precipitadas. Deixe um pouco de lado o espírito aventureiro e pondere com muito cuidado sobre o seu futuro.
+
+Para quem não tem certeza de qual rumo tomar, o ano pessoal 5 vai ajudar a tomar essa decisão. Durante esse período, será possível experimentar diferentes mudanças, por isso é que a pessoa poderá se encontrar.`;
+const descriptionWork6 = `A estabilidade do ano pessoal 6 garante um momento profissional bastante propício ao sucesso. Isso porque você será capaz de dar grandes passos e mostrar todo o seu potencial por meio de um trabalho bem feito e bastante impressionante.
+
+A necessidade de finalizar ciclos, contudo, também pode significar que você irá agarrar novas oportunidades, tais como novos cargos ou, quem sabe, um emprego totalmente diferente daquele com o qual você está acostumado. Felizmente, as chances de crescer e se destacar em um novo meio são extremamente altas.
+
+Por fim, por estar se sentindo bastante satisfeito com a sua vida, você também se tornará confiante o suficiente para ter pulso firme e expor e defender as suas ideias.`;
+const descriptionWork7 = `Harmonia e estabilidade`;
+const descriptionWork8 = `Harmonia e estabilidade`;
+const descriptionWork9 = `Harmonia e estabilidade`;
+
+const descriptionHealth1 = `Harmonia e estabilidade`;
+const descriptionHealth2 = `Harmonia e estabilidade`;
+const descriptionHealth3 = `Harmonia e estabilidade`;
+const descriptionHealth4 = `Harmonia e estabilidade`;
+const descriptionHealth5 = `Todo o dinamismo e a transformação do ano pessoal 5 podem lhe deixar um pouco agitado, e isso interfere diretamente em sua saúde mental. É importante, então, procurar atividades que lhe deixem mais tranquilo. A criatividade vai estar rolando solta durante esse período. Aproveite e use isso a seu favor para se distrair um pouco de todos os seus problemas e questionamentos!
+
+A transformação que possui tanta ligação com esse ano também pode interferir diretamente em seu organismo. Para aqueles que estão procurando emagrecer, engordar ou simplesmente ganhar alguns músculos, esse é o momento perfeito para isso.`;
+const descriptionHealth6 = `A busca por harmonia constante e o fato de você estar constantemente lidando com os problemas de outras pessoas podem te deixar um pouco sobrecarregado. Por isso é interessante ficar atento aos sinais do seu corpo para que você não deixe que a sua saúde mental seja afetada por esses fatores.
+
+O ano pessoal 6 tende a ser muito benéfico para diversas áreas de sua vida, o que lhe garante grande sucesso. Contudo isso também acaba trazendo certa ansiedade para que, no final, tudo dê certo. A chave para passar por esse momento de maneira suave é o pensamento positivo e, quem sabe, uma boa terapia.
+
+Medicamentos pesados não são indicados. Tente alcançar a harmonia por conta própria, por meio de remédios naturais, que não são maléficos para o nosso corpo.`;
+const descriptionHealth7 = `Harmonia e estabilidade`;
+const descriptionHealth8 = `Harmonia e estabilidade`;
+const descriptionHealth9 = `Harmonia e estabilidade`;

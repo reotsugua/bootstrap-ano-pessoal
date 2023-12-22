@@ -98,22 +98,80 @@
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Seu ano pessoal é o <span
+                        <h1 class="modal-title fs-4" id="staticBackdropLabel">Seu ano pessoal é o <span
                                 id="personalYearResult">0</span></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p id="personalYearDescription">Aqui vai a descrição do ano pessoal.</p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        O que representa na sua vida
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div id="personalYearDescription" class="accordion-body"></div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <i class="bi bi-arrow-through-heart-fill me-3"></i> Ano pessoal no Amor
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div id="personalLoveDescription" class="accordion-body"></div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <i class="bi bi-person-workspace me-3"></i>Ano pessoal no Trabalho
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div id="personalWorkDescription" class="accordion-body"></div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <i class="bi bi-heart-pulse-fill me-3"></i>Ano pessoal na Saúde
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div id="personalHealthDescription" class="accordion-body"></div>
+                                </div>
+                            </div>
+                        </div>
                         <hr>
-                        <p>Para saber mais entre em contato o Jeitinho Janaina.</p>
+                        <h4 class="mb-3" style="color: var(--bs-indigo);">Descubra Seu Caminho em 2024: </h4>
+                        <h5>Obtenha Seu Mapa Solar Exclusivo!</h5>
+                        <p>O Mapa Solar é um guia personalizado que analisa as energias e tendências para o seu ano,
+                            baseado na sua data de nascimento e localização. Com orientações precisas, ele oferece
+                            insights para direcionar suas escolhas e ajudar a atingir suas metas ao longo do ano,
+                            proporcionando uma visão clara das oportunidades e desafios que podem surgir.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         <a
                             href="https://api.whatsapp.com/send?phone=5511985210549&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Mapa%20solar...">
                             <button type="button" class="btn btn-success">
                                 <i class="bi bi-whatsapp"></i>
-                                Janaina</button>
+                                FAÇA SEU MAPA!</button>
                         </a>
                     </div>
                 </div>
@@ -187,15 +245,48 @@
                     document.getElementById('personalYearResult').textContent = personalYear;
                     document.getElementById('personalYearDescription').textContent =
                         getPersonalYearDescription(personalYear);
+                    document.getElementById('personalLoveDescription').textContent =
+                        getPersonalLoveDescription(personalYear);
+                    document.getElementById('personalWorkDescription').textContent =
+                        getPersonalWorkDescription(personalYear);
+                    document.getElementById('personalHealthDescription').textContent =
+                        getPersonalHealthDescription(personalYear);
                     new bootstrap.Modal(document.getElementById('staticBackdrop')).show();
                 }
                 form.classList.add('was-validated');
             });
 
             function calculatePersonalYear(day, month, year) {
-                // Cálculo do ano pessoal (ajuste conforme necessário)
-                const sum = day + month + (year % 100);
-                return sum % 9 || 9;
+                // Obter o aniversário da pessoa
+                const birthday = new Date(year, month, day);
+                const dataAtual = new Date();
+
+
+                // Extrair dia, mês e ano do aniversário
+                const birthdayDay = birthday.getDate();
+                const birthdayMonth = birthday.getMonth();
+                const birthdayYear = dataAtual.getFullYear();
+
+
+                console.log(birthdayDay);
+                console.log(birthdayMonth);
+                console.log(birthdayYear);
+
+                // Calcular a soma dos dígitos do aniversário
+                const sum = Math.floor(birthdayDay / 10) + (birthdayDay % 10) +
+                    Math.floor(birthdayMonth / 10) + (birthdayMonth % 10) +
+                    Math.floor(birthdayYear / 1000) + Math.floor((birthdayYear % 1000) / 100) +
+                    Math.floor((birthdayYear % 100) / 10) + (birthdayYear % 10);
+
+                console.log(sum);
+
+                // Reduzir a soma para um dígito único
+                let personalYear = sum;
+                while (personalYear > 9) {
+                    personalYear = Math.floor(personalYear / 10) + (personalYear % 10);
+                }
+
+                return personalYear;
             }
 
             function getPersonalYearDescription(year) {
@@ -209,6 +300,48 @@
                     7: descriptionYear7,
                     8: descriptionYear8,
                     9: descriptionYear9,
+                };
+                return descriptions[year] || "Descrição não disponível para este ano.";
+            }
+            function getPersonalLoveDescription(year) {
+                const descriptions = {
+                    1: descriptionLove1,
+                    2: descriptionLove2,
+                    3: descriptionLove3,
+                    4: descriptionLove4,
+                    5: descriptionLove5,
+                    6: descriptionLove6,
+                    7: descriptionLove7,
+                    8: descriptionLove8,
+                    9: descriptionLove9,
+                };
+                return descriptions[year] || "Descrição não disponível para este ano.";
+            }
+            function getPersonalWorkDescription(year) {
+                const descriptions = {
+                    1: descriptionWork1,
+                    2: descriptionWork2,
+                    3: descriptionWork3,
+                    4: descriptionWork4,
+                    5: descriptionWork5,
+                    6: descriptionWork6,
+                    7: descriptionWork7,
+                    8: descriptionWork8,
+                    9: descriptionWork9,
+                };
+                return descriptions[year] || "Descrição não disponível para este ano.";
+            }
+            function getPersonalHealthDescription(year) {
+                const descriptions = {
+                    1: descriptionHealth1,
+                    2: descriptionHealth2,
+                    3: descriptionHealth3,
+                    4: descriptionHealth4,
+                    5: descriptionHealth5,
+                    6: descriptionHealth6,
+                    7: descriptionHealth7,
+                    8: descriptionHealth8,
+                    9: descriptionHealth9,
                 };
                 return descriptions[year] || "Descrição não disponível para este ano.";
             }
