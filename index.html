@@ -20,7 +20,8 @@
         <div class="bg-white my-3 rounded" style="max-width: 500px; box-shadow: 0 20px 27px 0 rgba(0,0,0,.05);">
 
 
-            <img class="img-fluid rounded-top" src="assets/image/figure/mulher.png" alt="" srcset="">
+            <!-- <img class="img-fluid rounded-top" src="assets/image/figure/mulher.png" alt="" srcset=""> -->
+            <img class="img-fluid rounded-top" src="assets/image/figure/numeros/capa1.png" alt="" srcset="">
 
             <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
                 <div class="position-absolute w-100 top-0 z-index-1">
@@ -98,15 +99,17 @@
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header py-2">
+                        <img id="personalYearImage" class="img-fluid me-3 " src=""
+                            alt="figure-ano" style="width: 25%;">
                         <h1 class="modal-title fs-4" id="staticBackdropLabel">Seu ano pessoal é o <span
                                 id="personalYearResult">0</span></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body pt-0">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <h2 class="accordion-header pt-2">
                                     <button class="accordion-button collapsed fs-4" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                         aria-expanded="false" aria-controls="flush-collapseOne">
@@ -244,6 +247,12 @@
                     const year = parseInt(document.getElementById('validationYear').value);
                     const personalYear = calculatePersonalYear(day, month, year);
                     document.getElementById('personalYearResult').textContent = personalYear;
+
+                    // Atualizando o caminho da imagem para corresponder ao ano pessoal
+                    document.getElementById('personalYearImage').src =
+                        `assets/image/figure/numeros/${personalYear}.png`;
+
+
                     document.getElementById('personalYearDescription').textContent =
                         getPersonalYearDescription(personalYear);
                     document.getElementById('personalLoveDescription').textContent =
@@ -254,6 +263,7 @@
                         getPersonalHealthDescription(personalYear);
                     new bootstrap.Modal(document.getElementById('staticBackdrop')).show();
                 }
+
                 form.classList.add('was-validated');
             });
 
@@ -309,6 +319,7 @@
                 };
                 return descriptions[year] || "Descrição não disponível para este ano.";
             }
+
             function getPersonalLoveDescription(year) {
                 const descriptions = {
                     1: descriptionLove1,
@@ -323,6 +334,7 @@
                 };
                 return descriptions[year] || "Descrição não disponível para este ano.";
             }
+
             function getPersonalWorkDescription(year) {
                 const descriptions = {
                     1: descriptionWork1,
@@ -337,6 +349,7 @@
                 };
                 return descriptions[year] || "Descrição não disponível para este ano.";
             }
+
             function getPersonalHealthDescription(year) {
                 const descriptions = {
                     1: descriptionHealth1,
