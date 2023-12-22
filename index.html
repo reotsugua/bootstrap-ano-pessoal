@@ -85,7 +85,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 mx-md-auto">
-                            <button class="btn btn-primary w-100" style="background-color: var(--bs-indigo);" type="submit">DESCOBRIR</button>
+                            <button class="btn btn-primary w-100" style="background-color: var(--bs-indigo);"
+                                type="submit">DESCOBRIR</button>
                         </div>
                     </form>
                 </div>
@@ -192,10 +193,43 @@
                 form.classList.add('was-validated');
             });
 
+            // function calculatePersonalYear(day, month, year) {
+            //     // Cálculo do ano pessoal (ajuste conforme necessário)
+            //     const sum = day + month + (year % 100);
+            //     return sum % 9 || 9;
+            // }
+
             function calculatePersonalYear(day, month, year) {
-                // Cálculo do ano pessoal (ajuste conforme necessário)
-                const sum = day + month + (year % 100);
-                return sum % 9 || 9;
+                // Obter o aniversário da pessoa
+                const birthday = new Date(year, month, day);
+                const dataAtual = new Date();
+
+
+                // Extrair dia, mês e ano do aniversário
+                const birthdayDay = birthday.getDate();
+                const birthdayMonth = birthday.getMonth();
+                const birthdayYear = dataAtual.getFullYear();
+                
+
+                console.log(birthdayDay);
+                console.log(birthdayMonth);
+                console.log(birthdayYear);
+
+                // Calcular a soma dos dígitos do aniversário
+                const sum = Math.floor(birthdayDay / 10) + (birthdayDay % 10) +
+                    Math.floor(birthdayMonth / 10) + (birthdayMonth % 10) +
+                    Math.floor(birthdayYear / 1000) + Math.floor((birthdayYear % 1000) / 100) +
+                    Math.floor((birthdayYear % 100) / 10) + (birthdayYear % 10);
+
+                    console.log(sum);
+
+                // Reduzir a soma para um dígito único
+                let personalYear = sum;
+                while (personalYear > 9) {
+                    personalYear = Math.floor(personalYear / 10) + (personalYear % 10);
+                }
+
+                return personalYear;
             }
 
             function getPersonalYearDescription(year) {
