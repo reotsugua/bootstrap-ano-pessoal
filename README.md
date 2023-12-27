@@ -1,6 +1,6 @@
 # Descubra Seu Caminho em 2024 🌞 #FREELA
 "Descubra Seu Caminho em 2024" é um projeto freelance inovador, onde desenvolvi um teste personalizado que revela as energias e tendências para o próximo ano, baseado na data de nascimento do usuário. Este projeto foi construído com foco na experiência do usuário (UX/UI), utilizando tecnologias de ponta e práticas de desenvolvimento modernas.   
-> [Acesse o Teste](https://lnkd.in/duM2HE72)
+> [Acesse o Teste](https://reotsugua.github.io/jeitinho-jana/)
 
 ## Tecnologias Utilizadas
 - **JavaScript Vanilla**: Para uma interação dinâmica e funcionalidades robustas.
